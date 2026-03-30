@@ -1,0 +1,7 @@
+outflow/
+ip/
+work_pnr/
+work_syn/
+work_pt
+*.xml
+*.log
