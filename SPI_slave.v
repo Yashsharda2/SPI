@@ -25,8 +25,8 @@ module SPI_slave(
     always @(posedge clk) begin
         if (reset || cs_n) begin
             bit_cnt <= 3'd7;
-            tx_reg  <= FPGA_SEND_DATA;
-            miso    <= FPGA_SEND_DATA[7];
+            tx_reg  <=_DATA;
+            miso    <=DATA[7];
         end else begin
           
             if (rising_edge) begin
